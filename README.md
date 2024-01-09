@@ -41,7 +41,7 @@ export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
 ## Installing Mono
 
-Go to https://www.mono-project.com/download/stable/#download-lin-debian for guide.
+Go to https://www.mono-project.com/download/stable/#download-lin-debian for guide.  See the EXAMPLES page for some great example code.
 
 ```bash
 sudo apt install dirmngr ca-certificates gnupg
