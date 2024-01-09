@@ -50,4 +50,10 @@ echo "deb [signed-by=/usr/share/keyrings/mono-official-archive-keyring.gpg] http
 sudo apt update
 
 sudo apt install mono-complete
+
+# Test https is working - this should not error
+csharp -e 'new System.Net.WebClient ().DownloadString ("https://www.nuget.org")'
+
+# This should do exactly as it says
+csharp -e 'for (int i = 0; i < 10; i++) {Console.WriteLine(i);}'
 ```
